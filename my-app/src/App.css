@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.centered {
+  width: 50%; 
+  border-color:orange;
+}
+
+.selectBar {
+  border-color: orange;
+}
+.containerMedicalConditions{
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+.medicalConditionButton {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ffa500;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black ;
+  font-weight: 500;
+  text-align: left;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
