@@ -104,20 +104,20 @@ const renderMatchingMedicalConditions = () => {
             // Fetch medication data from backend onclick
             onClick={() => {
               const conditionName = condition;
-              fetch(`http://127.0.0.1:5000/getMedication/${conditionName}`)
+              fetch(`https://candidate-assignment-5hohk5qryq-as.a.run.app/getDrugs/${conditionName}`)
                 .then((response) => response.json())
                 .then((data) => {
                   // If medication is found from backend
-                  if (data.code === 200) {
-                    const medication = data.data;
-                    console.log("medication", medication);
-
+                  console.log("response", data);
+  
+                  // Assuming data is an array of medication names
+                  if (Array.isArray(data)) {
+                    const medication = data;
+  
                     // Change data format from array of objects to string
                     setMedicationData((prevState) => ({
                       ...prevState,
-                      [conditionName]: medication
-                        .map((med) => med.name)
-                        .join(', '),
+                      [conditionName]: medication.join(', '), // Join medication names into a string
                     }));
                   } else {
                     // If no medication is found from backend
@@ -149,6 +149,8 @@ const renderMatchingMedicalConditions = () => {
       ))}
     </div>
   );
+  
+  
 };
 
 
