@@ -4,18 +4,6 @@ TeleHealth is a web application that helps users describe their current symptoms
 
 ## Installation and Project Set-Up
 
-### Backend
-
-1. In the `my-app-backend` folder, import the `getMedication.sql` database into your MySQL server.
-
-2. Install the necessary Python dependencies:
-
-   ```bash
-   cd my-app-backend
-   pip install -r requirements.txt
-    ```
-
-### Frontend
 1. Navigate to the `my-app` folder.
 2. Install the required npm packages:
 
@@ -38,6 +26,6 @@ To experience the full functionality of TeleHealth, follow these steps:
 
 2. Click on `AIDS` to see the backend call and retrieve the necessary medication information.
 
-3. Click on `Acne` to observe the response when there is no backend data available.
+3. Click on `Chicken Pox` to observe the response when there is no backend data available.
 
 Enjoy exploring TeleHealth!
